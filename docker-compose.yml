@@ -1,0 +1,8 @@
+version: '2.2'
+services:
+    php-fpm:
+        build: docker
+        container_name: container_php_fpm
+        working_dir: /var/www
+        volumes:
+            - ./:/var/www
